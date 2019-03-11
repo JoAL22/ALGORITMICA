@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+    var arreglo = [1,2,3,4];
+    for (let i = 0; i < arreglo.length; i++)
+        console.log("el elemento ["+i+"] es: "+arreglo[i]);
+    </script>
+</head>
+</html>
