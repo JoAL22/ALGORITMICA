@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script>
+            function Modulo (nro1, nro2)
+            {
+                var pot = 0;
+                for (var i = 1; i < nro2; i++)
+                {
+                    pot = pot * nro1;
+                }
+                return pot;
+            }
+
+            function Mientras (nro1, nro2)
+            {
+                var pot = 1;
+                var i = 0;
+                while (i < nro2)
+                {
+                    pot = pot * nro1;
+                    i++;
+                }
+                return pot;
+            }    
+
+            function HacerMientras (nro1, nro2)
+            {
+                var pot = 1;
+                var i = 0;
+                do
+                {
+                    pot = pot * nro1;
+                    i++;
+                } while (i < nro2)
+                return pot;
+            }
+
+            var nro1 = Number(prompt('ingrese el primer numero: '));
+            var nro2 = Number(prompt('ingrese el segundo numero: '));
+            
+            var poten = HacerMientras (nro1, nro2);
+
+            document.write("La potencia de "+nro1+"^("+nro2+") es: "+poten);
+        </script>
+    </head>
+    <body></body>
+</html>
