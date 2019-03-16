@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>  
+		<meta charset="utf-8" />
+		<script>
+
+			var arreglo = [5];
+            for (var i = 0; i<10; i++)
+            {
+                arreglo[i] = Number(prompt("ingrese el valorpara el arreglo "+(i+1)));
+            }
+            var positivos =0, negativos = 0, ceros = 0;
+            for (var i = 0; i < 10; i++)
+            {
+                if (arreglo[i] > 0)
+                {
+                    positivos++;
+                }
+                else if (arreglo[i] < 0)
+                {
+                    negativos++;
+                }
+                else ceros++;
+            }
+            document.write('Numero de positivos: '+positivos);
+            document.write('Numero de negativos: '+negativos);
+            document.write('Numero de ceros: '+ceros);
+            
+		</script>
+	</head>	
+    <body></body>
+</html>
