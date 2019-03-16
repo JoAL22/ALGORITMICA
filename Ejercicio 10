@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script>
+            function factorial (nro)
+            {
+                if (nro == 0)
+                    return 1;
+                else
+                   return nro * factorial (nro - 1); 
+            }
+
+            var nro = Number(prompt('Ingrese un numero del cual desee saber su factorial: '));
+            document.write("El factorial de "+nro+" es: "+factorial(nro));
+        </script>        
+    </head>
+    <body></body>
+</html>
