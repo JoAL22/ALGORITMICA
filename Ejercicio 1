@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>  
+		<meta charset="utf-8" />
+		<script>
+			var numero = [];
+            
+            for (var i = 0; i < 5; i++)
+            {
+                numero[i] = Number(prompt('Escriba el valor del arreglo ['+i+']: '));   
+                 
+            }
+
+             for (var i = 0; i < 5; i++)
+            {
+                document.write('El elemento '+i+' es '+numero[i]);    
+            }
+		</script>
+	</head>	
+    <body></body>
+</html>
