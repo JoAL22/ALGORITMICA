@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script>
+            if (indice == 0)
+        {
+            document.write("El elemento en indice "+indice+" es "+array[indice]);
+        }
+        else
+        {
+            escribirarreglo(array, indice-1); 
+            document.write("El elemento en indice "+indice+" es "+array[indice]);
+        }
+        
+       var array = [Number(prompt("Cuantos elementos tiene el arreglo: "))];
+       
+       System.out.println("Escriba los elementos del arreglo: ");
+       //Lectura de datos es iterativa
+       for (var i=0; i<array.length; i++)
+       {
+            array[i] = sc.nextInt();    
+       }
+       //Esctructura del arreglo recursiva
+       escribirarreglo(array, array.length -1);
+       </script>
+	</head>
+	<body>
+	</body>
+</html>
