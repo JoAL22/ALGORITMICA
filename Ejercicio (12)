@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script>
+        function SumaArray(array,indice)
+    {
+        var suma;
+        //caso base
+        if (indice==0)
+        {
+            return array[indice];
+        }
+        else //Caso recursivo
+        {
+            suma = array[indice] + SumaArray(array, indice-1);
+        }
+        return suma;
+    }
+    
+
+       var array = [Number(prompt("Cuantos elementos tiene el arreglo: "))];
+       
+       //Lectura de datos es iterativa
+       for (var i=0; i<array.length; i++)
+       {
+            array[i] = Number(prompt("Escriba los elementos del arreglo: "));    
+       }
+      document.write("La suma de los elementos del arreglo es: "+SumaArray(array, array.length -1));
+        
+       </script>
+	</head>
+	<body>
+	</body>
+</html>
