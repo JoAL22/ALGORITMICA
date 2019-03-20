@@ -4,6 +4,7 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <script>
+            function escribirarreglo(array, indice){
             if (indice == 0)
         {
             document.write("El elemento en indice "+indice+" es "+array[indice]);
@@ -13,14 +14,14 @@
             escribirarreglo(array, indice-1); 
             document.write("El elemento en indice "+indice+" es "+array[indice]);
         }
-        
-       var array = [Number(prompt("Cuantos elementos tiene el arreglo: "))];
-       
-       System.out.println("Escriba los elementos del arreglo: ");
+            }
+        var a=Number(prompt("Cuantos elementos tiene el arreglo: "));
+       var array = [a];
+
        //Lectura de datos es iterativa
-       for (var i=0; i<array.length; i++)
+       for (var i=0; i<a; i++)
        {
-            array[i] = sc.nextInt();    
+            array[i] = Number(prompt("escribir elementos: "));    
        }
        //Esctructura del arreglo recursiva
        escribirarreglo(array, array.length -1);
