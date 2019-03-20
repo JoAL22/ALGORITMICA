@@ -1,31 +1,27 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <script>
-             function Promedio( array, indice)
-    {
-        var suma;
-        if (indice==0)
+            function Promedio( array, indice)
         {
-            return array[indice];    
+            var suma;
+            if (indice==0)
+                {
+                    return array[indice];    
+                }
+            else
+                {
+                    suma = array[indice] + Promedio(array, indice-1);
+                }
+            return suma;
         }
-        else
-        {
-            suma = array[indice] + Promedio(array, indice-1);
-        }
-        return suma;
-    }
-       var a=Number(prompt("cuantos elementos tiene el array"));
+       var a=Number(prompt("cuantos elementos tiene el arreglo"));
        var array = [a];
-       
-       document.write("Escriba los elementos del arreglo: ");
        //Lectura de datos es iterativa
        for (var i=0; i<a; i++)
        {
-           
-            array[i] = Number(prompt("Digitalize el primer numero: "));    
+            array[i] = Number(prompt("Digitalize el numero: "));    
        }
        document.write("El promedio de los elementos del arreglo es: "+Promedio(array, array.length -1)/array.length);
        </script>
