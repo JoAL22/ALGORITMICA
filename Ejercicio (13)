@@ -17,13 +17,14 @@
         }
         return suma;
     }
-
-       var array = [Number(prompt("Cuantos elementos tiene el arreglo: "))];
+       var a=Number(prompt("cuantos elementos tiene el array"));
+       var array = [a];
        
-       System.out.println("Escriba los elementos del arreglo: ");
+       document.write("Escriba los elementos del arreglo: ");
        //Lectura de datos es iterativa
-       for (var i=0; i<array.length; i++)
+       for (var i=0; i<a; i++)
        {
+           
             array[i] = Number(prompt("Digitalize el primer numero: "));    
        }
        document.write("El promedio de los elementos del arreglo es: "+Promedio(array, array.length -1)/array.length);
